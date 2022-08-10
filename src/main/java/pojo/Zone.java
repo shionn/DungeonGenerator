@@ -1,5 +1,8 @@
 package pojo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Repésente une zone en cours de génération du dongeon
  * 
@@ -11,6 +14,8 @@ package pojo;
  */
 public class Zone {
 	private int sx, ex, sy, ey;
+
+	private List<Character> keys = new ArrayList<>();
 
 	public Zone(int startx, int endx, int starty, int endy) {
 		this.sx = startx;
@@ -55,9 +60,21 @@ public class Zone {
 		return ey;
 	}
 
+	public void addKey(char key) {
+		keys.add(key);
+	}
+
+	public List<Character> getKeys() {
+		return keys;
+	}
+
+	public void addKeys(List<Character> keys) {
+		this.keys.addAll(keys);
+	}
+
 	@Override
 	public String toString() {
-		return "[" + sx + "," + ex + "," + sy + "," + ey + "],(" + w() + "," + h() + ")";
+		return "[" + sx + "," + ex + "," + sy + "," + ey + "],(" + w() + "," + h() + ")" + keys;
 	}
 
 }

@@ -10,20 +10,23 @@ package pojo;
  *         G- e+++ h+ r- y-
  */
 public enum DungeonElt {
-	WALL('#', true),
-	EMPTY('.', false),
-	DOORV('|', true),
-	DOORH('-', true),
-	CORRIDOR(' ', false),
-	MONSTER('m', false),
-	SAFE('¤', false);
+	WALL('#', true, false),
+	EMPTY(' ', false, false),
+	DOORV('|', true, true),
+	DOORH('-', true, true),
+	CORRIDOR(' ', false, false),
+	MONSTER('m', false, false),
+	SAFE('¤', false, false),
+	KEY('k', false, true);
 
 	private char graphic;
 	private boolean solid;
+	private boolean displayData;
 
-	private DungeonElt(char graphic, boolean solid) {
+	private DungeonElt(char graphic, boolean solid, boolean displayData) {
 		this.graphic = graphic;
 		this.solid = solid;
+		this.displayData = displayData;
 	}
 
 	public char getGraphic() {
@@ -32,5 +35,9 @@ public enum DungeonElt {
 
 	public boolean isSolid() {
 		return solid;
+	}
+
+	boolean isDisplayData() {
+		return displayData;
 	}
 }
