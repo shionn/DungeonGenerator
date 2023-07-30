@@ -1,4 +1,4 @@
-package pojo;
+package mine.pojo;
 
 /**
  * Pojo d'un donjon

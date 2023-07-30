@@ -1,11 +1,11 @@
 
-package generator;
+package mine.generator;
 
 import java.util.Random;
 
-import pojo.Dungeon;
-import pojo.DungeonElt;
-import pojo.Zone;
+import mine.pojo.Dungeon;
+import mine.pojo.DungeonElt;
+import mine.pojo.Zone;
 
 /**
  * genere un dongon basé sur l'algo de split recursif

@@ -1,4 +1,4 @@
-package generator;
+package mine.generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.Queue;
 import java.util.Random;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import pojo.Dungeon;
-import pojo.DungeonElt;
-import pojo.Zone;
+import mine.pojo.Dungeon;
+import mine.pojo.DungeonElt;
+import mine.pojo.Zone;
 
 public class DungeonGenerator2 {
 	private static final float KEY_RATE = .2f;

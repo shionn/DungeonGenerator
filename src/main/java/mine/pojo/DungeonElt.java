@@ -1,4 +1,4 @@
-package pojo;
+package mine.pojo;
 
 /**
  * Elements composant {@link Dungeon}

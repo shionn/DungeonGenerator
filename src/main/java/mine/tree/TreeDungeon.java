@@ -1,4 +1,4 @@
-package tree;
+package mine.tree;
 
 import java.util.ArrayList;
 import java.util.Arrays;

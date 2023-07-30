@@ -1,11 +1,11 @@
-package tree;
+package mine.tree;
 
 import java.util.Queue;
 import java.util.Random;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import pojo.Dungeon;
-import pojo.DungeonElt;
+import mine.pojo.Dungeon;
+import mine.pojo.DungeonElt;
 
 public class TreeDungeonGenerator {
 

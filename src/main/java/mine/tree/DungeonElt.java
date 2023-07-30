@@ -1,4 +1,4 @@
-package tree;
+package mine.tree;
 
 public interface DungeonElt {
 
